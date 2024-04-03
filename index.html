@@ -4,27 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹스터디 ::: 황현지</title>
-    <style>
-        div{
-            display: inline-block;
-            border-top: solid 4px gray;
-            border-left: solid 4px gray;
-            border-right: solid 4px black;
-            border-bottom: solid 4px black;
-            margin: 5px;
-            padding: 10px 30px 10px 30px;
-            width: 300px
-        }
-        div.contents{
-            background-color: gold;
-        }
-        div#ootd{
-            background-color: cyan;
-        }
-        p{
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <h1>웹화면 구현 수업의 웹스터디 페이지</h1>
@@ -35,16 +15,40 @@
     </p>
     <hr>
     <div class="contents">
-        <p>영화 소개</p>
-        <p>영화를 소개하는 부분입니다.</p>
+        <dl>
+        <dt>영화 소개 : 파묘</dt>
+            
+        <dd>
+            <a href="https://namu.wiki/w/%ED%8C%8C%EB%AC%98">
+            <img src="./img_m1.jpg" alt="파묘 포스터">
+            </a>
+            <br>
+            미국 LA, 거액의 의뢰를 받은 무당 ‘화림’(김고은)과 ‘봉길’(이도현)은 기이한 병이 대물림되는 집안의 장손을 만난다. 조상의 묫자리가 화근임을 알아챈 ‘화림’은 이장을 권하고, 돈 냄새를 맡은 최고의 풍수사 ‘상덕’(최민식)과 장의사 ‘영근’(유해진)이 합류한다. “전부 잘 알 거야… 묘 하나 잘못 건들면 어떻게 되는지” 절대 사람이 묻힐 수 없는 악지에 자리한 기이한 묘. ‘상덕’은 불길한 기운을 느끼고 제안을 거절하지만, ‘화림’의 설득으로 결국 파묘가 시작되고… 나와서는 안될 것이 나왔다.
+        </dd>
+        </dl>
     </div>
     <div id="ootd">
-        <p>오늘의 패션</p>
-        <p>오늘의 패션/코디을 소개하는 부분입니다.</p>
+        <dl>
+        <dt>오늘의 패션 : 패션회사 직원들의 패션</dt>
+        <a href="https://www.segye.com/newsView/20240328521749">
+            <img src="./img_f1.jpg" alt="패션 사진">
+        </a>
+        <br>
+        <dd>직원들의 솔직한 자사 제품 경험담…‘임플로이언서’ 마케팅이 뜬다 [이슈 속으로]<br>
+            지난해 2월 패션회사 LF의 유튜브 채널 ‘LF랑 놀자’에 올라온 한 영상에 댓글 400여개가 줄줄이 달렸다. 조회수 400만회를 넘어선 해당 영상 속 주인공은 연예인도, 인플루언서도 아닌 LF에 다니는 평범한 회사원이었다. 이 직원이 착용한 ‘닥스’의 ‘블랙 DD로고 소가죽 미니 크로스백’은 영상 업로드 열흘 만에 매출 1억원 이상을 올리며 ‘핫 아이템’으로 떠올랐다. 가방은 3월 현재까지 누적 매출 5억원을 기록하며 수차례 리오더를 진행했다.
+        </dd>
+        </dl>
     </div>
     <div class="contents">
-        <p>넷플리스 소개</p>
-        <p>넷플리스를 소개하는 부분입니다.</p>
+        <dl>
+        <dt>넷플리스 소개 : 황야</dt>
+        <dd>
+            <a href="https://namu.wiki/w/%ED%99%A9%EC%95%BC(%EC%98%81%ED%99%94)">
+                <img src="./img_n1.jpg" alt="황야 포스터">
+            </a>
+            <br>
+            폐허가 된 세상, 오직 힘이 지배하는 무법천지 속에서 살아가는 자들이 생존을 위해 벌이는 최후의 사투를 그린 액션 블록버스터</dd>
+        </dl>
     </div>
 </body>
 </html>
