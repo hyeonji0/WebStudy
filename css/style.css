@@ -4,7 +4,9 @@ img{
 dt{
     font-weight: bold;
 }
-
+u{
+    color: red;
+}
 div{
     vertical-align: top;
     display: inline-block;
