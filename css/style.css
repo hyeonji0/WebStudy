@@ -27,6 +27,16 @@ div#ootd{
     /* text-decoration: underline;
     text-decoration-color: red; */
 }
+div#login_form{
+    text-align: center;
+    width: 500px;
+    height: auto;
+}
+div#login_form input{
+    display: block;
+    margin: 10px;
+
+}
 p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
