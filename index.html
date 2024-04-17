@@ -158,13 +158,13 @@
             <th>2</th>
             <td>사이다</td>
             <td>2개</td>
-            <td rowspan="2">1,000원</td><!--열병합-->
+            <td rowspan="2">1,000원</td><!--행병합-->
         </tr>
         <tr>
             <th>3</th>
             <td>탄산수</td>
             <td>3개</td>
-            <!--열을 병합했으므로 생성X-->
+            <!--행을 병합했으므로 생성X-->
         </tr>
         <tr>
             <td>합계</td>
@@ -175,43 +175,51 @@
 
     <div style="width: 600px; text-align: center;">
     <table width="500px" border="2" cellspacing="3">
-        <tr>
-            <th>순번</th>
-            <th>품명</th>
-            <th>단가</th>
-            <th>수량</th>
-            <th>비고</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>새우깡</td>
-            <td>1,300</td>
-            <td>3</td>
-            <td rowspan="3">해당없음</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>감자깡</td>
-            <td>1,300</td>
-            <td>8</td>
+        <caption style="color: #f20202; font-weight: bold;">제품 주문표</caption>
+        <col style="width: 10%;">
+        <colgroup span="3" style="width: 20%; background-color: beige;"></colgroup>
+        <col style="width: 30%;">
+        <thead>
+            <tr>
+                <th scope="col">순번</th>
+                <th>품명</th>
+                <th>단가</th>
+                <th>수량</th>
+                <th>비고</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>합계</td>
+                <td colspan="4">42,300</td>           
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>새우깡</td>
+                <td>1,300</td>
+                <td>3</td>
+                <td rowspan="3">해당없음</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>감자깡</td>
+                <td>1,300</td>
+                <td>8</td>
             
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>자갈치</td>
-            <td>1,400</td>
-            <td>20</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>자갈치</td>
+                <td>1,400</td>
+                <td>20</td>
             
-        </tr>
-        <tr>
-            <td>합계</td>
-            <td colspan="4">42,300</td>
-            
-        </tr>
+            </tr>
+            </tbody>
     </table>
 </div>
     
-
 
 </body>
 </html>
